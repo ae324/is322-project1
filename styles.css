@@ -1,0 +1,44 @@
+body{
+    min-width: 400px;
+    max-width: 2000px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+}
+/* Navigation bar CSS */
+ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: lavenderblush;
+}
+
+li {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+
+    margin-right: 30px
+}
+
+#footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: Black;
+    text-align: center;
+    background-color: lavenderblush ;
+}
+
+
+/* Slideshow container */
+#slideshow-container {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+
+}
+

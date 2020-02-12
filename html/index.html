@@ -3,24 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <title>IS 322 Project #1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../styles.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
+
 </head>
 
 <body>
+
+<!-- NAV BAR START-->
 <div id="navigation_bar">
-<ul>
-    <li> <a href="index.html"> Home </a> </li>
-    <li> <a href="product.html"> Products </a> </li>
-    <li> <a href="contact.html"> Contact Us </a> </li>
-</ul>
+    <ul>
+
+        <li><a href="index.html"> Home </a></li>
+        <li><a href="history.html"> History </a></li>
+        <li><a href="about.html"> About Us </a></li>
+        <li><a href="product.html"> Products </a></li>
+        <li><a href="contact.html"> Contact Us </a></li>
+
+    </ul>
+</div>
+<!-- NAV BAR END-->
+
+<!-- Carousel-->
+<div id="slideshow-container">
+    <div class="mySlides">
+        <img src="../imgs/il_1588xN.2023532154_gw61.jpg" style="width:500px; height: 600px">
+    </div>
+    <div class="mySlides">
+        <img src="../imgs/original_1kg-giant-yarn-pure-merino-wool-for-big-arm-knitting.jpg"
+             style="width:500px; height: 600px">
+    </div>
+    <div class="mySlides">
+        <img src="../imgs/IMG_1334_1_1.jpg" style="width:500px; height: 600px">
+    </div>
+    <div class="mySlides">
+        <img src="../imgs/1c0137e107420f79f442e0e1f21f48bc.jpg" style="width:500px; height: 600px">
+    </div>
+    <div class="mySlides">
+        <img src="../imgs/232c58da62a99c20197ddc8ce6a7ee11.jpg" style="width:500px; height: 600px">
+    </div>
+
 </div>
 
+<!--END-->
+
+
+<!--FOOTER-->
+<div id="footer">
+    <p> &copy; Allison Eglow, 2020</p>
+</div>
+<!--END-->
 
 
 </body>
 
-<script src="../landing.js">
+<!--JAVASCRIPT-->
+<script>
+    var myIndex = 0;
+    carousel();
 
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+            myIndex = 1
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 3000); // Change image every 2 seconds
+    }
 </script>
+<!--END-->
+
 
 </html>
