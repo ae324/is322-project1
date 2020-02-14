@@ -6,119 +6,47 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../styles.css" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
-<style>
-    @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
-    @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600);
-    figure.snip1224 {
-        font-family: 'Raleway', Arial, sans-serif;
-        position: relative;
-        overflow: hidden;
-        margin: 10px;
-        min-width: 400px;
-        max-width: 480px;
-        width: 100%;
-        background: #1a1a1a;
-        color: #ffffff;
-        text-align: center;
-        border-radius: 8px;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-    }
-    figure.snip1224 * {
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        -webkit-transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
-        transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
-    }
-    figure.snip1224 .image {
-        background-color: #000000;
-        width: 50%;
-        overflow: hidden;
-        float: right;
-    }
-    figure.snip1224 img {
-        max-width: 100%;
-        vertical-align: top;
-    }
-    figure.snip1224 figcaption {
-        position: absolute;
-        width: 50%;
-        left: 0;
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-        transform: translateY(-50%);
-        bottom: 0;
-        padding: 10px 35px;
-    }
-    figure.snip1224 h4,
-    figure.snip1224 p,
-    figure.snip1224 .price {
-        margin: 0 0 8px;
-    }
-    figure.snip1224 h4 {
-        position: absolute;
-        width: 50%;
-        top: 10px;
-        right: 0;
-        text-transform: uppercase;
-        font-weight: 400;
-        color: #ffffff;
-        letter-spacing: 1px;
-        z-index: 1;
-    }
-    figure.snip1224 p {
-        font-size: 0.7em;
-        font-weight: 500;
-        line-height: 1.6em;
-    }
-    figure.snip1224 .rating {
-        position: absolute;
-        width: 50%;
-        line-height: 44px;
-        color: #ffffff;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(0, 0, 0, 0.3);
-    }
-    figure.snip1224 .price {
-        color: #ffffff;
-        font-size: 1.3em;
-        opacity: 0.8;
-    }
-    figure.snip1224 .price s {
-        display: inline-block;
-        padding: 0 8px 0 0;
-        font-size: 0.85em;
-        color: #f39c12;
-    }
-    figure.snip1224 .add-to-cart {
-        text-decoration: none;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        font-weight: 600;
-        width: 50%;
-        background-color: rgba(0, 0, 0, 0.2);
-        line-height: 44px;
-        font-size: 0.75em;
-        text-transform: uppercase;
-        color: #ffffff;
-    }
-    figure.snip1224:hover img,
-    figure.snip1224.hover img {
-        opacity: 0.6;
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
-    }
-    figure.snip1224:hover .add-to-cart,
-    figure.snip1224.hover .add-to-cart {
-        background-color: rgba(0, 0, 0, 0.5);
-    }
-</style>
+    <style>
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+        }
+
+        .price {
+            color: grey;
+            font-size: 22px;
+        }
+
+        .card button {
+            border: none;
+            outline: 0;
+            padding: 12px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+
+    </style>
 </head>
 
 <body>
 
 <!-- NAV BAR START-->
+<div id="header">
+
+    <h1 style="font-family:'Caveat',serif; font-size: 30px; text-align: center" >
+        <img src="../imgs/handmade.png" style="height: 50px;width: 50px">
+        HOOKED
+
+    </h1>
+</div>
+
 <div id="navigation_bar">
     <ul>
         <li><a href="index.html"> Home </a></li>
@@ -126,40 +54,73 @@
         <li><a href="about.html"> About Us </a></li>
         <li><a href="product.html"> Products </a></li>
         <li><a href="contact.html"> Contact Us </a></li>
+        <li style="float:right"><a class="active" href="#about">My Account</a></li>
 
     </ul>
 </div>
+
+
+
 <!-- NAV BAR END-->
-<figure class="snip1224">
-    <h4>Casual Top</h4>
-    <div class="image">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample17.jpg" alt="sq-sample17"/></div>
-    <div class="rating"><i class="ion-ios-star"></i><i class="ion-ios-star"></i><i class="ion-ios-star"></i><i
-            class="ion-ios-star"></i><i class="ion-ios-star-outline"></i></div>
-    <figcaption>
-        <p>I'm just very selective about the reality I choose to accept.</p>
-        <div class="price">
-            <s>$24.00</s>$19.00
-        </div>
-    </figcaption>
-    <a href="#" class="add-to-cart">Add to Cart</a>
-</figure>
-<figure class="snip1224 hover">
-    <h4>Footwear</h4>
-    <div class="image">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample15.jpg" alt="sq-sample15"/></div>
-    <div class="rating"><i class="ion-ios-star"></i><i class="ion-ios-star"></i><i class="ion-ios-star"></i><i
-            class="ion-ios-star"></i><i class="ion-ios-star-outline"></i></div>
-    <figcaption>
-        <p>I suppose if we couldn't laugh at things that don't make sense, we couldn't react to a lot of life.</p>
-        <div class="price">
-            <s>$29.00</s>$24.00
-        </div>
-    </figcaption>
-    <a href="#" class="add-to-cart">Add to Cart</a>
-</figure>
 
+<div id="product-list">
+    <div class="card">
+        <img src="../imgs/RAINBOWTOY.0069.zoom.1.jpg" style="width:100%">
+        <h1>Plymouth Yarn Toybox Collection</h1>
+        <p class="price">$3.99</p>
+        <p><strong>Fiber Content:</strong> 100% Acrylic<br>
+            <strong>Country Of Origin :</strong> Turkey</p>
+        <p>
+            <button>Add to Cart</button>
+        </p>
+    </div>
+    <div class="card">
+        <img src="../imgs/CertoPrint102.jpg" style="width:100%">
+        <h1>Lana Grossa Certo Print</h1>
+        <p class="price">$10.99</p>
+        <p><strong>Fiber Content:</strong> 100% Cotton<br>
+            <strong>Country Of Origin :</strong> Italy</p>
+        <p>
+            <button>Add to Cart</button>
+        </p>
+    </div>
 
+    <div class="card">
+        <img src="../imgs/LNG-CAMILL.0052.jpg" style="width:100%">
+        <h1>Lang Camille</h1>
+        <p class="price">$20.00</p>
+        <p>
+            <strong>Fiber Content:</strong> 100% Acrylic <br>
+            <strong>Country Of Origin :</strong> Turkey
+        </p>
+        <p>
+            <button>Add to Cart</button>
+        </p>
+    </div>
+    <div class="card">
+        <img src="../imgs/Tsubame2.jpg" style="width:100%">
+        <h1>Noro Tsubame</h1>
+        <p class="price">$49.95</p>
+        <p><strong>Fiber Content:</strong>50% Silk/ 25% Wool/ 25% Polyamide <br>
+            <strong>Country Of Origin :</strong> Japan</p>
+        <p>
+            <button>Add to Cart</button>
+        </p>
+    </div>
+    <div class="card">
+        <img src="../imgs/JPM-CUMULUS.01.jpg" style="width:100%">
+        <h1>Juniper Moon Farm Cumulus</h1>
+        <p class="price">$19.95</p>
+        <p><strong>Fiber Content:</strong> 94% Cotton/ 6% Nylon<br>
+            <strong>Country Of Origin :</strong> Italy</p>
+        <p>
+            <button>Add to Cart</button>
+        </p>
+    </div>
+
+</div>
+<br>
+<br>
 <!--FOOTER-->
 <div id="footer">
     <p> &copy; Allison Eglow, 2020</p>

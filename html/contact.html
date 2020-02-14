@@ -36,7 +36,6 @@
     /* Add a background color and some padding around the form */
     .container {
         border-radius: 5px;
-        background-color: #f2f2f2;
         padding: 20px;
     }
 </style>
@@ -45,20 +44,32 @@
 <body>
 
 <!-- NAV BAR START-->
+<div id="header">
+
+    <h1 style="font-family:'Caveat',serif; font-size: 30px; text-align: center" >
+        <img src="../imgs/handmade.png" style="height: 50px;width: 50px">
+        HOOKED
+
+    </h1>
+</div>
+
+
+<!-- NAV BAR START-->
 <div id="navigation_bar">
     <ul>
         <li><a href="index.html"> Home </a></li>
-        <li><a href="history.html"> History  </a></li>
+        <li><a href="history.html"> History </a></li>
         <li><a href="about.html"> About Us </a></li>
         <li><a href="product.html"> Products </a></li>
         <li><a href="contact.html"> Contact Us </a></li>
+        <li style="float:right"><a class="active" href="#about">My Account</a></li>
 
     </ul>
 </div>
 <!-- NAV BAR END-->
 
 <div class="container">
-    <form action="action_page.php">
+    <form>
 
         <label for="fname">First Name</label>
         <input type="text" id="fname" name="firstname" placeholder="Your name..">
